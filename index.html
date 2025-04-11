@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bytebank</title>
-    <link rel="stylesheet" href="css/app.css" type="text/css" />
+    <link rel="stylesheet" href="dist/css/app.css" type="text/css" />
+    <link rel="shortcut icon" type="image/jpg" href="/dist/images/avatar.svg"/>
 </head>
 <body>
     <header class="topo container-padding flex">
-        <img src="images/logo-bytebank.svg" alt="Bytebank">
+        <img src="dist/images/logo-bytebank.svg" alt="Bytebank">
         <div class="usuario flex">
             <span>Joana da Silva Oliveira</span>
-            <img src="images/avatar.svg" alt="Joana da Silva Oliveira" />
+            <img src="dist/images/avatar.svg" alt="Joana da Silva Oliveira" />
         </div>
     </header>
     <main class="container-padding flex">
@@ -31,7 +32,7 @@
                 <div class="flex">
                     <div class="saldo-valor">
                         <strong>
-                            Saldo <img src="images/olho.svg" alt="Mostrar saldo" />
+                            Saldo <img src="dist/images/olho.svg" alt="Mostrar saldo" />
                         </strong>
                         <div class="cc">
                             <span>Conta Corrente</span>
@@ -43,7 +44,7 @@
 
             <section class="block-nova-transacao">
                 <h2>Nova transação</h2>
-                <form action="" method="post" novalidate>
+                <form action="" method="get" novalidate>
                     <div class="campo">
                         <select name="tipoTransacao" id="tipoTransacao" class="campo-input" required>
                             <option value="">Selecione o tipo de transação</option>
@@ -111,4 +112,7 @@
         </aside>
     </main>
 </body>
+<script src="dist/js/bytebank.js" type="module"></script>
+
+
 </html>
